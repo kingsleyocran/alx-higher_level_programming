@@ -12,14 +12,18 @@ if __name__ == "__main__":
     sign = sys.argv[2]
     b = int(sys.argv[3])
 
-    if sign is '+':
+    if sign == '+':
         print("{} {} {} = {}".format(a, sign, b, add(a, b)))
-    elif sign is '-':
+        exit(0)
+    elif sign == '-':
         print("{} {} {} = {}".format(a, sign, b, sub(a, b)))
-    elif sign is '*':
+        exit(0)
+    elif sign == '*':
         print("{} {} {} = {}".format(a, sign, b, mul(a, b)))
-    elif sign is '/':
+        exit(0)
+    elif sign == '/':
         print("{} {} {} = {}".format(a, sign, b, div(a, b)))
+        exit(0)
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
