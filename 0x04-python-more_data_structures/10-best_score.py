@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-def best_score(my_dict):
-    if my_dict is None or my_dict == {}:
+def best_score(a_dictionary):
+    if a_dictionary is None or a_dictionary == {}:
         return None
-    biggest = max(my_dict.values())
-    for key, value in my_dict.items():
+    biggest = max(a_dictionary.values())
+    for key, value in a_dictionary.items():
         if value is biggest:
             return key
 
