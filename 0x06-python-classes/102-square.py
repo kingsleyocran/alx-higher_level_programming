@@ -23,23 +23,35 @@ class Square:
         self.__size = size
 
     def __eq__(self, other):
-        """Equal."""
+        """Equal
+        Returns:
+            bool: The return value. True for success, False otherwise.
+        """
         if hasattr(other, 'size'):
             return self.__size == other.__size
         return self.__size == other
 
     def __ne__(self, other):
-        """Not equal."""
+        """Not equal
+        Returns:
+            bool: The return value. True for success, False otherwise.
+        """
         return not self.__eq__(other)
 
     def __lt__(self, other):
-        """Less than."""
+        """Less than
+        Returns:
+            bool: The return value. True for success, False otherwise.
+        """
         if hasattr(other, 'size'):
             return self.__size < other.__size
         return self.__size < other
 
     def __le__(self, other):
-        """Less than or equal."""
+        """Less than or equal.
+        Returns:
+            bool: The return value. True for success, False otherwise.
+        """
         if hasattr(other, 'size'):
             return self.__size <= other.__size
         return self.__size <= other

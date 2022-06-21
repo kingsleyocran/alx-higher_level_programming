@@ -22,13 +22,13 @@ class MagicClass:
     def area(self):
         """Calculation of the circumference.
         Returns:
-            circumference of the circle (int)
+            int: circumference of the circle
         """
         return self._MagicClass__radius ** 2 * math.pi
 
     def circumference(self):
         """Calculation of the circumference.
         Returns:
-            circumference of the circle (int)
+            int: circumference of the circle
         """
         return 2 * math.pi * self._MagicClass__radius
