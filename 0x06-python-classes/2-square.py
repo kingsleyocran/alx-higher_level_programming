@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Module Square"""
+
+
 class Square:
     """Square class defined by geometric shape
      - Private instance attribute: size.
@@ -16,7 +19,7 @@ class Square:
             TypeError: if size is not int
             ValueError: size less than 0
         """
-        if not isinstance(size, int): #if type(size) != int:
+        if not isinstance(size, int):  # if type(size) != int:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")

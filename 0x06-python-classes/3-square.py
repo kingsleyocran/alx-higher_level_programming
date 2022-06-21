@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Module Square"""
+
+
 class Square:
     """Square class defined by geometric shape
      - Private instance attribute: size.

@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Module Square"""
+
+
 class Square:
     """Represents a square.
     - Private instance attribute: size:
@@ -74,6 +77,7 @@ class Square:
             Current square area (int)
         """
         return self.__size ** 2
+
 
 """
 s_5 = Square(5)

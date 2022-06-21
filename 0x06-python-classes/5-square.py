@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Module Square"""
+
+
 class Square:
     """Represents a square.
     - Private instance attribute: size:
@@ -8,7 +11,7 @@ class Square:
     - Public instance method: def area(self).
     - Public instance method: def my_print(self).
     Attributes:
-         size (int): Size of square
+        size (int): Size of square
     """
 
     def __init__(self, size=0):
@@ -63,4 +66,4 @@ class Square:
             print()
         else:
             for x in range(self.__size):
-                    print("#" * self.__size)
+                print("#" * self.__size)
