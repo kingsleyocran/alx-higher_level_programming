@@ -94,7 +94,7 @@ class Square:
     def area(self):
         """Calculates the area of the square
         Return:
-            Current square area (int)
+            int: Current square area
         """
         return self.__size ** 2
 
@@ -115,11 +115,3 @@ class Square:
                     print("#", end="")
                 print()
             return ''
-
-my_square = Square(5, (0, 0))
-print(my_square)
-
-print("--")
-
-my_square = Square(5, (4, 1))
-print(my_square)
