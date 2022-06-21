@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+
 """
 Singly linked list Module
 """
@@ -67,7 +67,6 @@ class Node:
             raise TypeError("next_node must be a Node object")
         else:
             self.__next_node = value
-
 
 class SinglyLinkedList:
     """
