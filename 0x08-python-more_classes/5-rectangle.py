@@ -10,11 +10,7 @@ class Rectangle:
     Instance Attributes:
         width (int): The width of the new rectangle.
         height (int): The height of the new rectangle.
-    Class attribute:
-        number_of_instances(int): number of Rectangle instances.
     """
-
-    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Initialize method
@@ -28,8 +24,6 @@ class Rectangle:
 
         #: int: height attribute for height
         self.__height = height
-
-        Rectangle.number_of_instances += 1
 
     def __str__(self):
         """Returns an informal and nicely printable string representation
@@ -56,8 +50,6 @@ class Rectangle:
     def __del__(self):
         """Delete method."""
         print("Bye rectangle...")
-
-        Rectangle.number_of_instances -= 1
 
     @property
     def width(self):
