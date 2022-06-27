@@ -29,7 +29,6 @@ class Rectangle:
         #: int: height attribute for height
         self.__height = height
 
-        #: Increase during each new instance instantiation
         Rectangle.number_of_instances += 1
 
     def __str__(self):
@@ -58,7 +57,6 @@ class Rectangle:
         """Delete method."""
         print("Bye rectangle...")
 
-        #: Decremented during each instance deletion
         Rectangle.number_of_instances -= 1
 
     @property
