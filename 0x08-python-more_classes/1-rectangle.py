@@ -20,10 +20,10 @@ class Rectangle:
         """
 
         #: int: width attribute for width
-        self.width = width
+        self.__width = width
 
         #: int: height attribute for height
-        self.height = height
+        self.__height = height
 
     @property
     def width(self):
