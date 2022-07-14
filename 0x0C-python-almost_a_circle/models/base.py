@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 '''
+    Base Class
     Creating the base class of all other classes for this project.
 '''
 import json
