@@ -9,7 +9,7 @@ from models.rectangle import Rectangle
 
 class Square(Rectangle):
     """Class describing a square.
-    Public instance methods:
+    - Public instance methods:
         - area()
         - display()
         - to_dictionary()
@@ -19,7 +19,7 @@ class Square(Rectangle):
 
     def __init__(self, size, x=0, y=0, id=None):
         """Initializes a Square instance.
-        Args:
+        - Args:
             - __size: size
             - __x: position
             - __y: position

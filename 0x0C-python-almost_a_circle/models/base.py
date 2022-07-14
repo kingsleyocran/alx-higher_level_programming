@@ -10,14 +10,14 @@ import csv
 
 class Base:
     """Class with:
-    Private class attribute: __nb_objects
+    - Private class attribute: __nb_objects
     """
 
     __nb_objects = 0
 
     def __init__(self, id=None):
         """Initialization of a Base instance.
-        Args:
+        - Args:
             - id: id of the instance
         """
 
@@ -32,9 +32,9 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """Returns a JSON representation of list_dictionaries.
-        Args:
+        - Args:
             - list_dictionaries: list of dicts
-        Returns: JSON representation of the list
+        - Returns: JSON representation of the list
         """
 
         if list_dictionaries is None or list_dictionaries == []:
@@ -48,7 +48,7 @@ class Base:
     def save_to_file(cls, list_objs):
         """Writes the JSON string representation of
         list_objs to a file.
-        Args:
+        - Args:
             - list_objs: list of instances who inherits of Base
         """
         """
