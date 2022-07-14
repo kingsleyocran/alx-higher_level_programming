@@ -31,7 +31,6 @@ class Rectangle(Base):
         '''
             Setter method for width
         '''
-        self.setter_validation("width", value)
         self.__width = value
 
     @property
@@ -46,15 +45,6 @@ class Rectangle(Base):
         '''
             Setter method for height
         '''
-        self.setter_validation("height", value)
         self.__height = value
 
-    @staticmethod
-    def setter_validation(attribute, value):
-        if type(value) != int:
-            raise TypeError("{} must be an integer".format(attribute))
-        if attribute == "x" or attribute == "y":
-            if value < 0:
-                raise ValueError("{} must be >= 0".format(attribute))
-        elif value <= 0:
-            raise ValueError("{} must be > 0".format(attribute))
+
