@@ -32,6 +32,14 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
+    @property
+    def width(self):
+        """Getter method for width
+        Retrieves the width attribute.
+        """
+
+        return self.__width
+
     @width.setter
     def width(self, value):
         """Sets the width attribute."""
@@ -43,12 +51,12 @@ class Rectangle(Base):
         self.__width = value
 
     @property
-    def width(self):
-        """Getter method for width
-        Retrieves the width attribute.
+    def height(self):
+        """ Getter method for height
+        - Retrieves the height attribute.
         """
 
-        return self.__width
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -63,12 +71,12 @@ class Rectangle(Base):
         self.__height = value
 
     @property
-    def height(self):
-        """ Getter method for height
-        - Retrieves the height attribute.
+    def x(self):
+        """Getter method for x
+        - Retrieves the x attribute.
         """
 
-        return self.__height
+        return self.__x
 
     @x.setter
     def x(self, value):
@@ -83,12 +91,12 @@ class Rectangle(Base):
         self.__x = value
 
     @property
-    def x(self):
-        """Getter method for x
-        - Retrieves the x attribute.
+    def y(self):
+        """Getter method for y
+        - Retrieves the y attribute.
         """
 
-        return self.__x
+        return self.__y
 
     @y.setter
     def y(self, value):
@@ -101,14 +109,6 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
-
-    @property
-    def y(self):
-        """Getter method for y
-        - Retrieves the y attribute.
-        """
-
-        return self.__y
 
     def area(self):
         """Calculates the area of a Rectangle instance.
