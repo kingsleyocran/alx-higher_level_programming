@@ -18,7 +18,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_not_int(self):
         """Test with a list of non-ints and ints:
         should raise a TypeError exception"""
-        llist = ["a", "b", 9]
+        list = ["a", "b", 9]
         self.assertRaises(TypeError, max_integer, list)
 
     def test_empty(self):
